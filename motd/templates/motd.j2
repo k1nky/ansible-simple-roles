@@ -1,0 +1,12 @@
+
+==========================================================================
+                      This system is managed by Ansible
+==========================================================================
+{% for item in motd_info %}
+* {{ item }}
+{% endfor %}
+*
+* NOTE: System and application configuration for this host is managed by
+* Ansible. To ensure that any changes you make here are not lost,
+* please do it with ansible project.
+--------------------------------------------------------------------------

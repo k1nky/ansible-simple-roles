@@ -1,0 +1,12 @@
+---
+
+- name: Present motd
+  become: true
+  template:
+    src: etc/motd.j2
+    dest: /etc/motd
+    mode: 0644
+    owner: root
+    group: root
+  tags:
+    - motd
