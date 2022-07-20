@@ -1,0 +1,3 @@
+mappings:
+  - src: .
+    dest: roles/motd
