@@ -1,3 +1,9 @@
 mappings:
   - src: .
     dest: roles/motd
+boost:
+  copy:
+    - src: example/playbook.yml
+      dest: motd.yml
+    - src: example/vars.yml
+      dest: group_vars/all/motd.yml
